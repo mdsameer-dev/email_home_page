@@ -15,7 +15,6 @@ main {
 .navbar {
     display: flex;
     justify-content: space-between;
-
     width: 100%;
     max-width: 1300px;
     box-sizing: border-box;
@@ -24,7 +23,6 @@ main {
 nav  {
     border-bottom: 2px solid #cfd5db;
 }
-
 
 nav div ul {
     display: flex;

@@ -8,18 +8,23 @@
     overflow-x: hidden;
 }
 
-header  {
-    border-bottom: 2px solid #cfd5db;
-}
-
 main {
     display: flex;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;
 }
+
+nav  {
+    border-bottom: 2px solid #cfd5db;
+}
+
 
 nav div ul {
     display: flex;
@@ -298,5 +303,11 @@ div img {
 @media (max-width:470px) {
     .main-nav {
         display: none;
+    }
+}
+
+@media (max-width:1285px) {
+    nav {
+        width: 70rem;
     }
 }

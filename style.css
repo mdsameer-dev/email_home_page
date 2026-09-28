@@ -32,7 +32,6 @@ nav div ul {
 div img {
     height: 2.5rem;
     padding: 0.5rem 0.5rem;
-    cursor: pointer;
 }
 
 .search-btn {
@@ -44,14 +43,12 @@ div img {
     border-radius: 0.5rem;
     margin: 0.5rem;
     background-color: #F4F5F6;
-    cursor: pointer;
     overflow-y: hidden;
 }
 
 .compose-btn {
     height: 4rem;
     width: 9rem;
-    cursor: pointer;
 }
 
 .profile-img {
@@ -61,7 +58,7 @@ div img {
     border-radius: 50%;
     padding: 0;
     margin: 0.5rem;
-    cursor: pointer;
+   
 }
 
 .sidebar {
@@ -117,7 +114,6 @@ div img {
     border-radius: 50%;
     padding: 0;
     margin-left: 5px;
-    cursor: pointer;
 }
 
 .sidebar ul li img {
@@ -196,7 +192,8 @@ div img {
 
 .link ul {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
+    margin: 0 1rem;
 }
 
 .company-logo {
@@ -209,7 +206,6 @@ div img {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
-
 }
 
 .company-name {
@@ -256,11 +252,91 @@ div img {
     width: 4rem;
 }
 
-@media (max-width: 1200px) {
-    .sidebar {
+ul li img{
+    opacity: 0.6;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+ul li img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 1120px) {
+  .sidebar {
+    width: 60px;
+    padding: 10px 5px;
+  }
+
+  .compose-btn {
+    display: none;
+  }
+
+  .inbox {
+    height: 14rem;
+  }
+
+  .inbox ul li img {
+    margin: 5px 10px;
+    padding: 2px 0;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .meet ul li img {
+    margin: 10px 10px;
+    padding: 2px 0;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .hangout .hangout-profile {
+    margin: 22px 10px;
+    align-items: center;
+  }
+
+ .contact {
+    display: none;
+ }
+
+  .sidebar p {
+    display: none;
+  }
+
+  .sidebar li {
+    font-size: 0;
+  }
+
+  .chats {
+    display: none;
+  }
+}
+
+@media (max-width:900px) {
+    .company-name {
+        margin-left: 4rem;
+    }
+
+    .email-content p {
         display: none;
     }
+
+    .sidebar {
+    width: 60px;
+    padding: 10px 5px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .hangout-profile {
+    display: none;
+  }
 }
+
+
 
 @media (max-width:920px) {
     .bookmark ul {
@@ -283,6 +359,10 @@ div img {
         height: 40rem;
         justify-content: center;
         align-items: center;
+    }
+
+    .sidebar {
+        display: none;
     }
 }
 
@@ -307,5 +387,12 @@ div img {
 @media (max-width:1285px) {
     nav {
         width: 70rem;
+    }
+}
+
+@media (max-width:510px) {
+    .subject {
+        flex-direction: column;
+        
     }
 }
